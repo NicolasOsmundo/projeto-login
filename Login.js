@@ -1,0 +1,19 @@
+$(document).ready(function(){
+   $(".container").fadeIn(1000);
+   $("#left").removeClass("left_hover");
+   $("#right").addClass("right_hover");
+   $(".signin").css({"display":"none"});
+   $(".signup").css({"display":""});
+});
+$("#right").click(function(){
+   $("#left").removeClass("left_hover");
+   $("#right").addClass("right_hover");
+   $(".signin").css({"display":"none"});
+   $(".signup").css({"display":""});
+});
+$("#left").click(function(){
+   $("#right").removeClass("right_hover");
+   $("#left").addClass("left_hover");
+   $(".signup").css({"display":"none"});
+   $(".signin").css({"display":""});
+});
